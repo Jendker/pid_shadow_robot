@@ -3,10 +3,20 @@
           <default class="position_control">
                <position ctrllimited="true" ctrlrange="-1 1" kp="1"/>
           </default>
+        <default class="base_joints_position">
+            <position ctrllimited="true" kp="500"/>
+        </default>
      </default>
    <actuator>
-        <general name="A_WRJ1" joint="WRJ1" ctrlrange="-0.524 0.175" biastype="affine" gainprm="10 0 0" biasprm="0 -10 0"/>
-        <general name="A_WRJ0" joint="WRJ0" ctrlrange="-0.79 0.61" biastype="affine" gainprm="10 0 0" biasprm="0 -10 0"/>
+        <position name="A_ARTx" joint="ARTx" ctrlrange="-0.25 0.25" class="base_joints_position"/>
+        <position name="A_ARTy" joint="ARTy" ctrlrange="0.0 0.2" class="base_joints_position"/>
+        <position name="A_ARTz" joint="ARTz" ctrlrange="-0.3 0.5" class="base_joints_position"/>
+        <position name="A_ARRx" joint="ARRx" ctrlrange="-.75 .75" class="base_joints_position"/>
+        <position name="A_ARRy" joint="ARRy" ctrlrange="-.75 .75" class="base_joints_position"/>
+        <position name="A_ARRz" joint="ARRz" ctrlrange="-.75 .75" class="base_joints_position"/>
+
+        <position name="A_WRJ1" joint="WRJ1" ctrlrange="-0.524 0.175" class="position_control" kp="10"/>
+        <position name="A_WRJ0" joint="WRJ0" ctrlrange="-0.79 0.61" class="position_control" kp="10"/>
         <position name="A_FFJ3" joint="FFJ3" ctrlrange="-0.44 0.44" class="position_control"/>
         <position name="A_FFJ2" joint="FFJ2" ctrlrange="0 1.6" class="position_control"/>
         <position name="A_FFJ1" joint="FFJ1" ctrlrange="0 1.6" class="position_control"/>

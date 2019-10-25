@@ -1,5 +1,5 @@
  <mujocoinclude>
- 	<compiler angle="radian" meshdir='dependencies/Adroit/resources/meshes/' texturedir='dependencies/Adroit/resources/textures/' />
+ 	<compiler angle="radian" meshdir='../dependencies/Adroit/resources/meshes/' texturedir='../dependencies/Adroit/resources/textures/' />
     <option apirate="200" iterations="20" noslip_iterations="20"/>
     <size nuserdata="100" njmax="500" nconmax="100" nstack="600000" nuser_body="9" nuser_jnt="1" nuser_site="1" nuser_tendon="1" nuser_actuator="16" nuser_sensor="1" />
     <visual>
@@ -24,10 +24,6 @@
         </default>
         <default class="D_Vizual">
             <geom type="mesh" contype="0" conaffinity="0" group="1" material="MatViz" />
-            <general user="0 1 0.03 0.0939711 0.513477 0.0358776 1.23598 8.40409 0.485031 6.04244 1.02187 0.175297 0.121642 0 0 0" />
-        </default>
-        <default class="free">
-            <joint type="free" limited="false" armature="0" damping="0" />
             <general user="0 1 0.03 0.0939711 0.513477 0.0358776 1.23598 8.40409 0.485031 6.04244 1.02187 0.175297 0.121642 0 0 0" />
         </default>
     </default>

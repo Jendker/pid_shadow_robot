@@ -1,5 +1,4 @@
 from mujoco_py import load_model_from_path, MjSim, MjViewer, cymj
-import numpy as np
 
 
 def mj_viewer_setup(sim):
@@ -15,9 +14,12 @@ def mj_render(viewer):
     viewer.render()
 
 
-# model = load_model_from_path("DAPG_relocate_position_control.xml")
-model = load_model_from_path("DAPG_relocate_P_control.xml")
-# model = load_model_from_path("DAPG_relocate_PID_control.xml")
+# ---------------- Model to select ----------------
+model = load_model_from_path("position_control/env_position_control.xml")
+# model = load_model_from_path("P_control/env_P_control.xml")
+# model = load_model_from_path("PID_control/env_PID_control.xml")
+
+# ---------------- Program ----------------
 sim = MjSim(model)
 cymj.set_pid_control(sim.model, sim.data)
 viewer = mj_viewer_setup(sim)
