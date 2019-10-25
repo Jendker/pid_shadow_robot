@@ -53,5 +53,5 @@
     </worldbody>
 
     <include file='../dependencies/DAPG_assets.xml'/>
-    <include file='actuators.xml'/>
+    <include file='position_control_actuators.xml'/>
 </mujoco>
