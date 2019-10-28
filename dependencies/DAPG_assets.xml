@@ -16,15 +16,12 @@
         <general ctrllimited="true" ctrlrange="-1 1"/>
         <default class="D_Touch">
             <site size="0.009 0.004 0.013" group="4" type="box" rgba="0.8 0.8 0.8 0.15" />
-            <general user="0 1 0.03 0.0939711 0.513477 0.0358776 1.23598 8.40409 0.485031 6.04244 1.02187 0.175297 0.121642 0 0 0" />
         </default>
         <default class="DC_Hand">
             <geom conaffinity="0" group="4" material="MatColl" />
-            <general user="0 1 0.03 0.0939711 0.513477 0.0358776 1.23598 8.40409 0.485031 6.04244 1.02187 0.175297 0.121642 0 0 0" />
         </default>
         <default class="D_Vizual">
             <geom type="mesh" contype="0" conaffinity="0" group="1" material="MatViz" />
-            <general user="0 1 0.03 0.0939711 0.513477 0.0358776 1.23598 8.40409 0.485031 6.04244 1.02187 0.175297 0.121642 0 0 0" />
         </default>
     </default>
     <asset>
