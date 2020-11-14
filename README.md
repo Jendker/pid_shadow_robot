@@ -1,6 +1,6 @@
 # pid_shadow_robot
 
-Test of PID control for shadow robot like hand.  
+Test of PID control for shadow robot-like hand.  
 
 Simplified hand model taken from mj_envs repository:
 https://github.com/vikashplus/mj_envs
